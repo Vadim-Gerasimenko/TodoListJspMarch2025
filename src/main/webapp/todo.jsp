@@ -27,7 +27,7 @@
         <li style="margin-bottom: 1em;">
             <form action="${pageContext.request.contextPath}/" method="POST">
                 <input type="text" name="text" value="${todoItem.text}">
-                <button type="submit" name="action" value="save">Сохранить</button>
+                <button type="submit" name="action" value="update">Сохранить</button>
                 <button type="submit" name="action" value="delete">Удалить</button>
                 <c:if test="${not empty updateError and not empty updateErrorItemId and updateErrorItemId == todoItem.id}">
                     <div style="color: red;">${updateError}</div>

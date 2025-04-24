@@ -66,7 +66,7 @@ public class TodoListServlet extends HttpServlet {
                 }
             }
 
-            case "save" -> {
+            case "update" -> {
                 int id = Integer.parseInt(req.getParameter("id"));
                 String text = req.getParameter("text");
 
